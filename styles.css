@@ -113,6 +113,10 @@ footer .brand span { font-size: 22px; }
 .doc ul, .doc ol { padding-left: 22px; }
 .doc li { margin-bottom: 6px; }
 .doc a { color: var(--ink); font-weight: 600; }
+/* Buttons inside text pages keep their own colours (the rule above would make the label black on black). */
+.doc a.cta { color: var(--cream); font-weight: 700; }
+.doc a.cta.alt { color: var(--ink); }
+.cta:hover { opacity: .88; }
 .doc .meta { color: var(--muted); font-size: 15px; }
 .steps { list-style: none; padding: 0; counter-reset: step; display: grid; gap: 14px; }
 .steps li { counter-increment: step; display: flex; gap: 16px; align-items: flex-start; background: #fff; border: 3px solid var(--ink); border-radius: 16px; padding: 18px 20px; box-shadow: 5px 5px 0 var(--ink); margin: 0; }
